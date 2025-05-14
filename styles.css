@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-links {
-  gap: 3.50rem;
+  gap: 5.10rem;
   list-style: none;
   font-size: 1.5rem;
 }
@@ -332,10 +332,18 @@ section {
     display: block;
   }*/
 
-.arrow {
+/*.arrow {
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  bottom: 2.50rem;
+  display: block;
+
+}*/
+
+.arrow {
+  display: block;
+  margin: 1rem -5rem 2.50rem auto; /* top, right, bottom, left */
+  position: relative;
 }
 
 .details-container {
