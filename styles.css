@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Styling section */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -24,7 +24,7 @@ a,
   transition: all 300ms ease;
 }
 
-/* Navigation bar */
+/* Navigation bar stlying Section  */
 
 nav,
 .nav-links {
@@ -65,7 +65,7 @@ a:hover {
   cursor: default;
 }
 
-/* Hamburger menu styling */
+/* Hamburger menu styling section  */
 
 #hamburger-nav {
   display: none;
@@ -159,7 +159,7 @@ section {
   display: flex;
 }
 
-/* Profile Section Styling */
+/* Profile styling Section  */
 
 #profile {
   display: flex;
@@ -236,14 +236,14 @@ section {
   gap: 1rem;
 }
 
-/* Icon Styling */
+/* Icon styling section  */
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* Button Styling */
+/* Button styling section  */
 
 .btn-container {
   display: flex;
@@ -291,7 +291,7 @@ section {
   gap: 1rem;
 }
 
-/* About section styling */
+/* About styling section  */
 
 #about {
   position: relative;
@@ -349,7 +349,7 @@ section {
   margin: auto 0;
 }
 
-/* Experience section styling*/
+/* Experience styling section */
 
 #skills {
   position: relative;
@@ -388,7 +388,7 @@ article .icon {
   cursor: default;
 }
 
-/* Projects section styling */
+/* Projects styling section */
 
 #projects {
   position: relative;
@@ -413,5 +413,45 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+/* Contact section styling */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
 }
 
