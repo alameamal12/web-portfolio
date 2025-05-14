@@ -340,10 +340,21 @@ section {
 
 }*/
 
-.arrow {
+/*.arrow {
   display: block;
-  margin: 1rem -5rem 2.50rem auto; /* top, right, bottom, left */
+  margin:  auto -5rem 2.5rem auto; /* top, right, bottom, left 
   position: relative;
+}*/
+
+.arrow-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto -2.5rem 3rem auto; /* adjust top and bottom spacing */
+}
+
+.arrow {
+  height: 2rem;
+  cursor: pointer;
 }
 
 .details-container {
@@ -357,7 +368,7 @@ section {
 }
 
 .section-container {
-  gap: 2.5rem;
+  gap: 3rem;
   height: 80%;
   align-items: center;
   margin-top: 2.5rem;
@@ -415,3 +426,31 @@ article {
 article .icon {
   cursor: default;
 }
+
+/* Projects section styling */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
