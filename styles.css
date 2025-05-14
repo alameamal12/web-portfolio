@@ -415,7 +415,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* Contact section styling */
+/* Contact styling section */
 
 #contact {
   display: flex;
@@ -455,3 +455,13 @@ article .icon {
   height: 2.5rem;
 }
 
+/* Footer styling section */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
