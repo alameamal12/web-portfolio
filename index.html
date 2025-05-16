@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Desktop navigation bar -->
     <nav id="desktop-nav">
       <div class="logo">My Portfolio</div>
       <div>
@@ -20,9 +21,11 @@
       </div>
 
     </nav>
+    <!-- Mobile navigation (hamburger menu) -->
     <nav id="hamburger-nav">
       <div class="logo">My Porfolio</div>
       <div class="hamburger-menu">
+        <!-- Hamburger icon with toggle function -->
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -36,6 +39,9 @@
         </div>
       </div>
     </nav>
+
+    <!-- Profile section -->
+
     <section id="profile">
       <div class="section__pic-container">
         <img
@@ -62,6 +68,7 @@
             Contact Info
           </button>
         </div>
+        <!-- Social media icons -->
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -78,6 +85,7 @@
         </div>
       </div>
     </section>
+    <!-- About section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -91,6 +99,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
+            <!-- Experience card -->
             <div class="details-container">
               <img
                 src="./assets/experience.png"
@@ -103,6 +112,7 @@
                 UX/UI Designer
               </p>
             </div>
+            <!-- Education Card-->
             <div class="details-container">
               <img
                 src="./assets/education.png"
@@ -113,6 +123,7 @@
               <p>B.Sc. Bachelors Degree</p>
             </div>
           </div>
+          <!-- Personal statement -->
           <div class="text-container">
             <p class="about-text">
               I'm an international graduate with a strong interest in creating
@@ -134,16 +145,17 @@
       </div>
 
     </section>
-
-    <section id="skills">
+<!-- Skills section -->
+<section id="skills">
   <p class="section__text__p1">Explore My</p>
   <h1 class="title">Skills</h1>
   <div class="skills-details-container">
 
-      <!-- Web Design -->
+      <!-- Web design skills -->
       <div class="details-container">
         <h2 class="skills-sub-title">Web Design</h2>
         <div class="article-container">
+          <!-- Individual skill articles -->
           <article><img src="./assets/checkmark.png" class="icon" /><div><h3>UI/UX Design</h3><p>Experienced</p></div></article>
           <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Responsive Design</h3><p>Experienced</p></div></article>
           <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Wireframing</h3><p>Intermediate</p></div></article>
@@ -151,7 +163,7 @@
         </div>
       </div>
 
-      <!-- Frontend & Backend -->
+      <!-- Frontend & backend skills -->
       <div class="details-container">
         <h2 class="skills-sub-title">Frontend & Backend</h2>
         <div class="article-container">
@@ -165,7 +177,7 @@
         </div>
       </div>
 
-      <!-- Soft Skills -->
+      <!-- Soft skills -->
       <div class="details-container">
         <h2 class="skills-sub-title">Soft Skills</h2>
         <div class="article-container">
@@ -181,10 +193,12 @@
 </section>
       </div>
     </section>
+  <!-- Contact section -->
   <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
+        <!-- Email contact -->
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
@@ -193,6 +207,7 @@
           />
           <p><a href="mailto:alameamal12@gmail.com">alameamal12@gmail.com</a></p>
         </div>
+        <!-- LinkedIn contact -->
         <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
@@ -201,6 +216,7 @@
           />
           <p><a href="https:http://linkedin.com/in/amal-ahmad-alame-45318b320">LinkedIn Profile</a></p>
         </div>
+        <!-- Location info -->
         <div class="contact-info-container">
           <img
             src="./assets/location.png"
@@ -209,12 +225,15 @@
           />
           <span>Loughborough, United Kingdom</span>
         </div>
+        <!-- Thank you message -->
         <p class="contact-thanks">Thank You For Scrolling</p>
       </div>
     </section>
+<!-- Footer -->
  <footer>
       <p>Copyright &#169; 2025 Amal Ahmad Alame. All Rights Reserved.</p>
     </footer>
+    <!-- JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
