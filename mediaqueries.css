@@ -1,39 +1,4 @@
-@media screen and (max-width: 768px) {
-    #desktop-nav {
-      display: none !important;
-    }
-
-    #hamburger-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-    }
-  
-    .menu-links {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-      padding: 1rem;
-    }
-  }
-
-  
-
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
-
+/* ----------- Tablet devices (max-width: 1200px) ----------- */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -41,16 +6,36 @@
 
   #hamburger-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
   }
 
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+  .menu-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100vw;
   }
 
   #profile,
   .section-container {
     display: block;
+  }
+
+  .section__pic-container {
+    width: 70vw;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 2rem;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .arrow {
@@ -66,26 +51,18 @@
     margin: 0 5%;
   }
 
-  .section__pic-container {
-    width: 70vw;
-    max-width: 300px;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 2rem;
-  }
-
-  .section__pic-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-  }
-
   .about-containers {
     margin-top: 0;
+    flex-wrap: wrap;
+  }
+
+  #projects {
+    height: fit-content;
   }
 }
 
+
+/* ----------- Small tablets / Large phones (max-width: 768px) ----------- */
 @media screen and (max-width: 768px) {
   section {
     margin: 0 1rem;
@@ -118,8 +95,7 @@
     align-items: center;
   }
 
-  .section_pic_container,
-  .profile-image,
+  .section__pic-container,
   .about-pic {
     width: 100%;
     max-width: 350px;
@@ -132,71 +108,189 @@
     margin: 1rem auto;
   }
 
+  .skills-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .project-img {
     width: 100%;
     height: auto;
   }
 
   .arrow {
-    position: relative;
-    right: 0;
-    display: block;
-    margin: 2rem auto;
+    display: none;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  article h3 {
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    min-width: 100%;
   }
 }
 
+
+/* ----------- Phones (max-width: 600px) ----------- */
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
   #profile {
-    height: fit-content;
+    height: auto;
     margin-bottom: 0;
   }
+
   article {
     font-size: 1rem;
   }
+
   footer nav {
-    height: fit-content;
+    height: auto;
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
-  }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: auto;
     justify-content: center;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
+
   .text-container {
     text-align: justify;
   }
-}
 
+  /* Fix contact responsiveness */
+  /*.two-column-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contact-info-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info-container {
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2;
+    word-break: break-word;
+  }
+
+  .contact-icon {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  footer {
+    height: auto;
+  }
+}*/
+
+#contact {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .two-column-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .contact-form,
+  .contact-info-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-thanks {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
