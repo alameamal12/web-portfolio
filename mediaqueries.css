@@ -4,21 +4,21 @@
     background-color: pink;
   }
 }
-
 /* ----------- Tablet devices (max-width: 1200px) ----------- */
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
+  nav#desktop-nav {
     display: none !important;
   }
 
-  #hamburger-nav {
+  nav#hamburger-nav {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
   }
 
-  .menu-links {
+
+    .menu-links {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -187,7 +187,7 @@
   .text-container {
     text-align: justify;
   }
-}
+
 
 /* ----------- Contact layout fixes ----------- */
 #contact {
@@ -238,4 +238,4 @@
   text-align: center;
   margin-top: 2rem;
 }
-
+}
