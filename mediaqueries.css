@@ -1,9 +1,5 @@
 /* ----------- Tablet devices (max-width: 1200px) ----------- */
 
-body {
-  background: pink !important;
-}
-
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none !important;
@@ -300,11 +296,15 @@ body {
   }
 }
 
-/*test*/
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #desktop-nav {
-    background-color: red !important;
     display: none !important;
+  }
+
+  #hamburger-nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
   }
 }
